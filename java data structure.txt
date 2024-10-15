@@ -1,0 +1,129 @@
+PROBLEM 1:
+package alpad;
+import java.util.Scanner;
+
+public class main1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+  
+		Scanner input = new Scanner(System.in);
+		int a;
+		int b;
+		int c;
+		
+		System.out.println("Enter num1: ");
+		a = input.nextInt();
+		System.out.println("Enter num2: ");
+		b = input.nextInt();
+		c = a+b;
+		System.out.println("Sum is: " + c);
+	}
+
+
+
+PROBLEM 2:
+package alpad;
+import java.util.Scanner;
+
+public class main1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+  
+		Scanner input = new Scanner(System.in);
+		double scr;
+		double nitems;
+		double egrade;
+		double a = 50;
+		double b = 50;
+		
+		System.out.println("Enter score: ");
+		scr = input.nextDouble();
+		System.out.println("Enter no. of items: ");
+		nitems = input.nextDouble();
+		egrade = scr / nitems*a + b;
+		System.out.println("Equivalent Grade is: " + egrade);
+	}
+
+}
+
+
+PROBLEM 3:
+package alpad;
+import java.util.Scanner;
+
+public class main1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+  
+		Scanner input = new Scanner(System.in);
+		double grosspay;
+		double sss;
+		double tax;
+		double Pagibig;
+		double Total_Deductions;
+		double Netpay;
+		
+		System.out.print("SIMPLE PAYROLL PROGRAM \n");
+		System.out.print("Enter Gross Pay: ");
+		grosspay = input.nextDouble();
+		
+		System.out.print("\n-------------------------------------\n ");
+		System.out.println("Deductions ");
+		System.out.print("Enter SSS: ");
+		sss = input.nextDouble();
+		
+		System.out.print("Enter Tax: ");
+		tax = input.nextDouble();
+		
+		System.out.print("Enter Pag-ibig: ");
+		Pagibig = input.nextDouble();
+		Total_Deductions = sss + tax + Pagibig;
+		Netpay = grosspay - Total_Deductions;
+		
+		System.out.print("Total Deduction is: " + Total_Deductions);
+		System.out.print("\n-------------------------------------\n ");
+		System.out.print("Netpay:" + Netpay);
+	}
+
+}
+
+PROBLEM 4:
+package alpad;
+import java.util.Scanner;
+
+public class main1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+  
+		Scanner input = new Scanner(System.in);
+		int a;
+		int b;
+		int c;
+		int d;
+		int e;
+		int f;
+		
+		
+		System.out.println("Enter num1: ");
+		a = input.nextInt();
+		System.out.println("Enter num2: ");
+		b = input.nextInt();
+		
+		c = a + b;
+		System.out.println("The Sum is: " + c);
+		
+		d = a * b;
+		System.out.println("The Product is: " + d);
+		
+		e = a / b;
+		System.out.println("The Quotient is: " + e);
+		
+		f = a - b;
+		System.out.println("The Difference is: " + f);
+	}
+
+}
