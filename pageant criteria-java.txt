@@ -1,0 +1,29 @@
+package alpad;
+import java.util.Scanner;
+public class main1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner input = new Scanner(System.in);
+		double sp;
+		double ai;
+		double qa;
+		double tl;
+		
+		
+		System.out.print("Stage Presence:");
+		sp = input.nextDouble();
+		System.out.print("Audience Impact:");
+		ai = input.nextDouble();
+		System.out.print("Q&A:");
+	    qa = input.nextDouble();
+	    System.out.print("Talent:");
+	    tl = input.nextDouble();
+	    
+	    double ga = sp + ai + qa + tl;
+	    System.out.print("General Average:" + ga);
+	
+	}
+
+}
