@@ -1,0 +1,39 @@
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+      
+      Scanner input = new Scanner(System.in);
+		double q1, q2, q3, qt, qper;
+		double mp1, mp2, mp3, mpt, mpper;
+		
+		System.out.println("SIMPLE GRADING SYSTEM");
+		System.out.println("QUIZZES: (40%) ");
+		System.out.print("Q1:");
+		q1 = input.nextDouble();
+		System.out.print("Q2:");
+		q2 = input.nextDouble();
+		System.out.print("Q3:");
+	    q3 = input.nextDouble();
+		
+	    qt = (q1 + q2 + q3) / 3;
+	    System.out.print("QT: " + qt);
+	    qper = (qt) * .40;
+	    System.out.print("\nQ%: " + qper);
+		System.out.print("\n-------------------------------------\n ");
+		
+		System.out.println("Machine Problems: (60%) ");
+	    System.out.print("MP1: ");
+		mp1 = input.nextDouble();
+		System.out.print("MP2: ");
+		mp2 = input.nextDouble();
+		System.out.print("MP3: ");
+	    mp3 = input.nextDouble();
+	  
+	    mpt = (mp1 + mp2 + mp3) / 3;
+	    System.out.print("MPT: " + mpt);
+	    mpper = (mpt) * .60;
+	    System.out.print("\nMPT%: " + mpper);
+		
+  }
+}
