@@ -1,0 +1,157 @@
+Challenge #1
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner (System.in);
+		
+		String lname, fname, mi, crs, stn, fs;
+		
+		System.out.println("--------------------------------");
+		System.out.println("|   Student Information - AI   |");
+		System.out.println("--------------------------------");
+		System.out.println(" ");
+		System.out.print("Please enter last name: ");
+		lname = input.nextLine();
+		System.out.print("Please enter first name: ");
+		fname = input.nextLine();
+		System.out.print("Please enter MI: ");
+		mi = input.nextLine();
+		System.out.print("Please enter your course: ");
+		crs = input.nextLine();
+		System.out.print("Please enter your section: ");
+		stn = input.nextLine();
+		System.out.print("Please enter your favorite subject: ");
+		fs = input.nextLine();
+		System.out.println("------------------------------------------------------------------");
+		System.out.println("Thank you, let me now repeat all the information you have provided");
+		System.out.println("------------------------------------------------------------------");
+		System.out.println("Your name " + fname + " " + mi + " " + lname);
+		System.out.println("You are enrolled in the course " + crs);
+		System.out.println("And you are with section " + stn);
+		System.out.println("And youre favorite subject is " + fs);
+		System.out.println("------------------------------------------------------------------");
+		
+		input.close();
+		System.exit(0);
+	}
+}
+
+
+
+
+Challenge #2
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("*********************************");
+        System.out.print("Please enter your age : ");
+        int age = scanner.nextInt(); 
+        System.out.println("*********************************");
+
+        if (age >= 18) {
+            System.out.println("Congratulations you are now qualified to vote!!!!!!");
+        } else {
+            System.out.println("Sorry, you are not qualified to vote.");
+        }
+
+        scanner.close();
+    }
+}
+
+
+
+Challenge #3
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("*************************************");
+        System.out.print("Please enter year level (1 – 4) : ");
+        int year = scanner.nextInt();
+        System.out.println("*************************************");
+
+        switch (year) {
+            case 1:
+                System.out.println("Welcome FRESHMAN");
+                break;
+            case 2:
+                System.out.println("Welcome JUNIOR");
+                break;
+            case 3:
+                System.out.println("Welcome SOPHOMORE");
+                break;
+            case 4:
+                System.out.println("Welcome SENIOR");
+                break;
+            default:
+                System.out.println("Invalid year level entered.");
+        }
+
+        scanner.close();
+    }
+}
+
+
+
+
+
+Challenge #4
+import java.util.Scanner;
+public class main6 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("*************************************");
+        System.out.print("Please enter your birth month (1 – 12) : ");
+        int month = scanner.nextInt();
+        System.out.println("*************************************");
+
+        switch (month) {
+            case 1:
+                System.out.println("Welcome CAPRICORN");
+                break;
+            case 2:
+                System.out.println("Welcome PISCES");
+                break;
+            case 3:
+                System.out.println("Welcome AQUARIUS");
+                break;
+            case 4:
+                System.out.println("Welcome LEO");
+                break;
+            case 5:
+                System.out.println("Welcome GEMINI");
+                break;
+            case 6:
+                System.out.println("Welcome CANCER");
+                break;
+            case 7:
+                System.out.println("Welcome VIRGO");
+                break;
+            case 8:
+                System.out.println("Welcome LIBRA");
+                break;
+            case 9:
+                System.out.println("Welcome SCORPIO");
+                break;
+            case 10:
+                System.out.println("Welcome SAGITTARIUS");
+                break;
+            case 11:
+                System.out.println("Welcome CAPRICORN");
+                break;
+            case 12:
+                System.out.println("Welcome AQUARIUS");
+                break;
+            default:
+                System.out.println("Invalid birth month entered.");
+        }
+
+        scanner.close();
+    }
+}
